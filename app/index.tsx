@@ -4,6 +4,7 @@ import { VStack } from "@/components/ui/vstack";
 import { Heading } from "@/components/ui/heading";
 import JokesCategories from "@/components/jokes-categories";
 import JokeList from "@/components/joke-list";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Home() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -27,17 +28,19 @@ export default function Home() {
   };
 
   return (
-    <VStack space="md" className="flex-1 px-2 py-4">
-      <Heading size="2xl" className="text-center text-primary-500">
-        Jokes List
-      </Heading>
+    <SafeAreaView className="flex-1">
+      <VStack space="md" className="flex-1 px-2 py-4">
+        <Heading size="2xl" className="text-center text-primary-500">
+          Jokes List
+        </Heading>
 
-      <JokesCategories
-        onSelectCategory={handleCategorySelect}
-        selectedCategories={selectedCategories}
-      />
+        <JokesCategories
+          onSelectCategory={handleCategorySelect}
+          selectedCategories={selectedCategories}
+        />
 
-      <JokeList selectedCategories={selectedCategories} />
-    </VStack>
+        <JokeList selectedCategories={selectedCategories} />
+      </VStack>
+    </SafeAreaView>
   );
 }
