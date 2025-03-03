@@ -9,7 +9,14 @@ import "@/global.css";
 export default function RootLayout() {
   return (
     <GluestackUIProvider mode="light">
-      <Tabs screenOptions={{ headerShown: false, animation: "shift" }}>
+      <Tabs
+        screenOptions={{
+          headerShown: false,
+          animation: "shift",
+          tabBarActiveTintColor: "rgb(127, 15, 255)",
+          tabBarInactiveTintColor: "rgb(191, 164, 255)",
+        }}
+      >
         <Tabs.Screen
           name="index"
           options={{
