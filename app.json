@@ -10,7 +10,10 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.elmerfiqi.mobilereactnativejakmalltest"
+      "bundleIdentifier": "com.elmerfiqi.mobilereactnativejakmalltest",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
