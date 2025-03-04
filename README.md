@@ -2,6 +2,20 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+## Build Links
+
+### iOS Build (Simulator Only)
+
+You can access the iOS build for the project using the following link:
+
+- [iOS Build (Simulator Only)](https://expo.dev/accounts/elmerfiqi/projects/mobile-react-native-jakmall-test/builds/f8a8dc8b-ed8b-4ac7-bd68-76b122a497eb)
+
+### Android Build
+
+You can access the Android build for the project using the following link:
+
+- [Android Build](https://expo.dev/accounts/elmerfiqi/projects/mobile-react-native-jakmall-test/builds/aa2f27bc-63ea-4de7-b291-d6665bf4af16)
+
 ## Get started
 
 1. Install dependencies
